@@ -4,7 +4,7 @@ import "./Navigation.css"
 const Navigation = () => {
     return (
         <nav>
-            <p className="link dim orange">Sign out</p>
+            <p className="link orange">Sign out</p>
         </nav>
     );
 }
