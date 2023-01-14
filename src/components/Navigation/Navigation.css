@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+}
+
+p {
+    font-size: xx-large;
+    text-decoration: underline;
+    padding: .5em;
+    cursor: pointer;
+
+}
