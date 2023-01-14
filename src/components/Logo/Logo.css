@@ -1,0 +1,30 @@
+/* div{
+    margin: 4px;
+    margin-top: 0px;
+} */
+
+body {
+    /* background:  #529393; */
+}
+
+.tilty {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    background-color: #B76A27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    display: inline-block;
+    transform: translateZ(60px);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FCB275;
+    letter-spacing: 0.15rem;
+}
