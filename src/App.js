@@ -1,6 +1,6 @@
 import './App.css';
 import ParticlesBg from 'particles-bg'
-import React  from 'react';
+import React from 'react';
 
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
@@ -21,7 +21,7 @@ class App extends Component {
     console.log(event.target.value);
   }
 
-  onSubmit = () =>{
+  onSubmit = () => {
     console.log("click");
   }
 
