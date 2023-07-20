@@ -52,8 +52,13 @@ class App extends Component {
     super();
     this.state = {
       input: '',
-      imgURL: ''
+      imgURL: '',
+      box: {},
     }
+  }
+
+  calculationFaceLocation = (data) => {
+
   }
 
   onInputChange = (event) => {
@@ -65,14 +70,8 @@ class App extends Component {
 
     fetch("https://api.clarifai.com/v2/models/" + 'face-detection' + "/outputs", setUpCalirifySettings(this.state.input))
       .then(response => response.json())
-      .then(response => {
-        console.log("hi", response.outputs[0].data.regions[0].region_info.bounding_box)
-      })
-
+      .then(response => this.calculationFaceLocation(response))
       .catch(error => console.log('error', error));
-    console.log("click");
-
-    console.log(this.state.input);
   }
 
   render() {
